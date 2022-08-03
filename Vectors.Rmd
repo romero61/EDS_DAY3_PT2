@@ -1,0 +1,48 @@
+---
+title: "Creating and Working with Vectors"
+author: "Guillermo Romero"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+# Makes some Vectors
+Everything gets assigned to the same class, so 4 returns as "4"
+```{r}
+marmots <- c("blue", "green", 4, "yello")
+
+# Check class
+class(marmots)
+?typeof
+?class
+```
+
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5)
+
+# Check Class
+class(pika)
+
+
+# SCALAR MULTIPLIER
+
+scalar_pika <- 5.2 * pika
+scalar_pika
+```
+
+```{r}
+bananas <- c(1, 2, 3)
+apples <- c(6, 7,8)
+ 
+
+bananas + apples
+bananas - apples
+## DOT PRODUCT
+bananas %*% apples
+```
+
