@@ -77,22 +77,6 @@ glimpse(penguins)
 
 ## Get working directory
 
-pwd
-
-# Check status
-
-git status
-
-## Stage
-
-git add -A
-
-## Commit
-
-git commit -m
-
-## Get working directory
-
 In terminal
 
 pwd
@@ -101,7 +85,7 @@ pwd
 
 git status
 
-## Stage Files Check commits
+## Stage Files, Check status
 
 git add -A
 
