@@ -75,6 +75,14 @@ glimpse(penguins)
 
 # Working with GIT outside of Rstudio
 
+## Get working directory
+
+pwd
+
+# Check status
+
+git status
+
 ## Stage
 
 git add -A
@@ -82,3 +90,27 @@ git add -A
 ## Commit
 
 git commit -m
+
+## Get working directory
+
+In terminal
+
+pwd
+
+## Check for commitments
+
+git status
+
+## Stage Files Check commits
+
+git add -A
+
+## Commit Files add message check status
+
+git commit -m "my message"
+
+git status
+
+## PUSH
+
+git push
