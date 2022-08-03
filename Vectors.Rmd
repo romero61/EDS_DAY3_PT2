@@ -11,8 +11,10 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-# Makes some Vectors
+# Making Vectors
+
 Everything gets assigned to the same class, so 4 returns as "4"
+
 ```{r}
 marmots <- c("blue", "green", 4, "yello")
 
@@ -35,6 +37,8 @@ scalar_pika <- 5.2 * pika
 scalar_pika
 ```
 
+# DOT PRODUCT
+
 ```{r}
 bananas <- c(1, 2, 3)
 apples <- c(6, 7,8)
@@ -46,3 +50,35 @@ bananas - apples
 bananas %*% apples
 ```
 
+# MATRICES
+
+Always look at your data, whether creating it or bringing it in.
+
+```{r}
+my_values <- seq(from = 1, to = 10)
+my_values_length <- seq(from = 1, to = 10, length = 200)
+
+my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+my_matrix
+
+5 * my_matrix
+
+## Check Class
+class(my_matrix)
+```
+
+# glimpse()
+
+```{r}
+glimpse(penguins)
+```
+
+# Working with GIT outside of Rstudio
+
+## Stage
+
+git add -A
+
+## Commit
+
+git commit -m

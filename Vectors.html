@@ -370,8 +370,8 @@ pre code {
 </div>
 
 
-<div id="makes-some-vectors" class="section level1">
-<h1>Makes some Vectors</h1>
+<div id="making-vectors" class="section level1">
+<h1>Making Vectors</h1>
 <p>Everything gets assigned to the same class, so 4 returns as “4”</p>
 <pre class="r"><code>marmots &lt;- c(&quot;blue&quot;, &quot;green&quot;, 4, &quot;yello&quot;)
 
@@ -390,6 +390,9 @@ class(pika)</code></pre>
 scalar_pika &lt;- 5.2 * pika
 scalar_pika</code></pre>
 <pre><code>## [1] 64.48 35.36 15.08 45.76 44.20</code></pre>
+</div>
+<div id="dot-product" class="section level1">
+<h1>DOT PRODUCT</h1>
 <pre class="r"><code>bananas &lt;- c(1, 2, 3)
 apples &lt;- c(6, 7,8)
  
@@ -402,6 +405,50 @@ bananas + apples</code></pre>
 bananas %*% apples</code></pre>
 <pre><code>##      [,1]
 ## [1,]   44</code></pre>
+</div>
+<div id="matrices" class="section level1">
+<h1>MATRICES</h1>
+<p>Always look at your data, whether creating it or bringing it in.</p>
+<pre class="r"><code>my_values &lt;- seq(from = 1, to = 10)
+my_values_length &lt;- seq(from = 1, to = 10, length = 200)
+
+my_matrix &lt;- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+my_matrix</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    2    3    4    5
+## [2,]    6    7    8    9   10</code></pre>
+<pre class="r"><code>5 * my_matrix</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    5   10   15   20   25
+## [2,]   30   35   40   45   50</code></pre>
+<pre class="r"><code>## Check Class
+class(my_matrix)</code></pre>
+<pre><code>## [1] &quot;matrix&quot; &quot;array&quot;</code></pre>
+</div>
+<div id="glimpse" class="section level1">
+<h1>glimpse()</h1>
+<pre class="r"><code>glimpse(penguins)</code></pre>
+<pre><code>## Rows: 344
+## Columns: 8
+## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+## $ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
+## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
+</div>
+<div id="working-with-git-outside-of-rstudio" class="section level1">
+<h1>Working with GIT outside of Rstudio</h1>
+<div id="stage" class="section level2">
+<h2>Stage</h2>
+<p>git add -A</p>
+</div>
+<div id="commit" class="section level2">
+<h2>Commit</h2>
+<p>git commit -m</p>
+</div>
 </div>
 
 
